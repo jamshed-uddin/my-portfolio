@@ -11,6 +11,7 @@ const Hero = () => {
             Web developer focused on front-end.I thrive on building intuitive
             and engaging web interfaces.
           </h1>
+          <h4 className="w-fit underline text-lg cursor-pointer">My resume</h4>
         </div>
       </div>
       <ScrollDown />

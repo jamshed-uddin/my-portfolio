@@ -44,6 +44,7 @@ lg:text-xl text-lg flex flex-col"
                 +8801751901166
               </h2>
               <span className="text-sm font-light  no-underline">
+                {" "}
                 (Whatsapp)
               </span>
             </a>

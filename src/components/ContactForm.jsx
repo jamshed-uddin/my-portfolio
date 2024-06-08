@@ -39,7 +39,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="text-center mt-1">
-        <button className="text-2xl  bg-black text-white px-4 py-1 ">
+        <button className="text-2xl  bg-black text-white px-4 py-1 rounded-md">
           Send
         </button>
       </div>

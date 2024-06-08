@@ -15,13 +15,13 @@ const ProjectCard = ({ project }) => {
               {project?.status === "Ongoing" ? ". Ongoing" : ""}
             </span>
           </h1>
-          <h3 className=" w-full lg:w-3/4">
+          <h3 className=" w-full lg:w-3/4 leading-4 mt-1">
             {project?.technology?.join(" . ")}
           </h3>
         </div>
 
         {/* links */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           {/* github */}
           <div>
             <a
@@ -48,13 +48,14 @@ const ProjectCard = ({ project }) => {
       </div>
 
       {/* project image */}
-      <div className=" ">
+      <div className="  select-none ">
         <div className="lg:w-80 w-full  lg:shadow-md rounded-lg overflow-hidden">
           <img
-            className="w-full object-cover "
+            className="w-full object-cover  "
             src={project?.photourl}
             alt=""
             loading="lazy"
+            draggable="false"
           />
         </div>
       </div>
