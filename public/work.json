@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "title": "Fax_",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1717869699/portfolio_photos/fax_w55wgg.png",
+    "technology": [
+      "React",
+      "Express",
+      "Tailwind CSS",
+      "Socket.io",
+      "Mongoose ODM",
+      "MongoDB",
+      "React router dom"
+    ],
+    "githubLink": "https://github.com/jamshed-uddin/Fax_",
+    "liveSiteLink": "",
+    "status": "Ongoing",
+    "description": "A real-time chat application with both one to one and group conversation."
+  },
+  {
+    "id": 2,
+    "title": "BidSync",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1717852879/portfolio_photos/bidSync_nnassy.png",
+    "technology": [
+      "React",
+      "Express",
+      "Tailwind CSS",
+      "Mongoose",
+      "MongoDB",
+      "Firebase authentication",
+      "React router dom"
+    ],
+    "githubLink": "https://github.com/jamshed-uddin/bidSync-client",
+    "liveSiteLink": "https://bidsync22.web.app/",
+    "status": "Complete",
+    "description": "An auction platform for selling object from different categories with flexible bidding process."
+  },
+  {
+    "id": 3,
+    "title": "Melody Manor",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1717852862/portfolio_photos/melodymanor_r6e9j6.png",
+    "technology": [
+      "React",
+      "Express",
+      "Tailwind CSS",
+      "MongoDB",
+      "Firebase authentication",
+      "React router dom"
+    ],
+    "githubLink": "https://github.com/jamshed-uddin/malody-manor-client",
+    "liveSiteLink": "https://melody-manor.web.app/",
+    "status": "Complete",
+    "description": "App for music institute with various music instrument lesson and to make admission process easier for the students."
+  }
+]
