@@ -2,7 +2,7 @@ import Title from "./Title";
 
 const About = () => {
   return (
-    <div className="lg:flex  gap-2 " id="about">
+    <div className="lg:flex  gap-2  pt-12 lg:pt-16" id="about">
       <div className="mb-4 pr-20">
         <Title>About</Title>
       </div>

@@ -1,13 +1,11 @@
 import Title from "./Title";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  const inputStyle =
-    "border-b-[1.4px] border-black px-5 py-2  w-full mt-1  focus:outline-none bg-white text-xl";
-
   return (
-    <div id="contact">
+    <div className="  pt-12 lg:pt-16" id="contact">
       <div className="lg:flex  gap-2 ">
         <div className="mb-4 pr-14">
           <Title>Contact</Title>
@@ -26,60 +24,24 @@ const Contact = () => {
       <div className="flex lg:flex-row flex-col  lg:divide-x-2 gap-8 divide-black mt-5 lg:mt-12 mb-8">
         {/* contact form */}
         <div className="lg:w-[60%] w-full lg:order-first order-last">
-          <div className="lg:flex items-center gap-4">
-            <div className="w-full">
-              <label htmlFor="" className="text-xl  block">
-                Name
-              </label>
-              <input
-                type="text"
-                placeholder="Your name"
-                className={inputStyle}
-                name="email"
-              />
-            </div>
-            <div className="w-full">
-              <label htmlFor="" className="text-xl  block">
-                Email
-              </label>
-              <input
-                type="email"
-                placeholder="Your email address"
-                className={inputStyle}
-                name="email"
-              />
-            </div>
-          </div>
-          <div className="w-full lg:mt-4">
-            <label htmlFor="" className="text-xl block">
-              Message
-            </label>
-            <textarea
-              type="text"
-              placeholder="Your message"
-              className={`${inputStyle} resize-none min-h-32`}
-              name="message"
-            />
-          </div>
-          <div className="text-center mt-1">
-            <button className="text-2xl  bg-black text-white px-4 py-1 ">
-              Send
-            </button>
-          </div>
+          <ContactForm />
         </div>
 
         {/* email,number and socials */}
         <div className="lg:pl-5 lg:w-[40%] w-full h-fit space-y-4">
           {/* email phone */}
-          <div className="">
+          <div
+            className="
+lg:text-xl text-lg flex flex-col"
+          >
             <a href="mailto:jamsheduddin03@gmail.com">
-              <h2 className="lg:text-2xl text-xl underline inline-block">
+              <h2 className=" underline inline-block">
                 jamsheduddin03@gmail.com
               </h2>
             </a>
             <a href="tel:+8801751901166">
-              <h2 className="lg:text-2xl text-xl underline inline-block">
-                +8801751901166{" "}
+              <h2 className=" underline inline-block text-lg">
+                +8801751901166
               </h2>
               <span className="text-sm font-light  no-underline">
                 (Whatsapp)

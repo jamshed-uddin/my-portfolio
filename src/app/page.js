@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <div className="space-y-24">
+      <div className="lg:space-y-20">
         <Work />
         <About />
         <Contact />

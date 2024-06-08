@@ -1,6 +1,14 @@
+"use client";
+
+import Link from "next/link";
+import MenuIcon from "./MenuIcon";
+import { useState } from "react";
+
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="flex justify-between items-center lg:py-3 fixed top-0 left-0 right-0 px-3 lg:px-16 backdrop-blur-lg">
+    <div className="flex justify-between items-center lg:py-3 fixed top-0 left-0 right-0 px-3 lg:px-16 backdrop-blur-md">
       <div className="lg:flex gap-32 leading-3 lg:leading-normal">
         <h1 className=" text-lg">Md Jamshed Uddin</h1>
         {/*available ping  */}
@@ -14,10 +22,51 @@ const Navbar = () => {
       </div>
 
       <div>
+        <MenuIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
+
+        <ul
+          className={`lg:hidden absolute h-screen w-screen bg-white flex flex-col justify-center text-6xl gap-5 pl-4 font-bold transition-all duration-500 ${
+            isMenuOpen ? "inset-0" : "top-0 bottom-0 left-96"
+          }`}
+        >
+          <li onClick={() => setIsMenuOpen((p) => !p)}>
+            <Link href={"/"} replace>
+              Home
+            </Link>
+          </li>
+          <li onClick={() => setIsMenuOpen((p) => !p)}>
+            <Link href={"#work"} replace>
+              Work
+            </Link>
+          </li>
+          <li onClick={() => setIsMenuOpen((p) => !p)}>
+            <Link href={"#about"} replace>
+              About
+            </Link>
+          </li>
+          <li onClick={() => setIsMenuOpen((p) => !p)}>
+            <Link href={"#contact"} replace>
+              Contact
+            </Link>
+          </li>
+        </ul>
+
         <ul className="lg:flex items-center gap-6  hidden ">
-          <li>Work</li>
-          <li>About </li>
-          <li>Contact </li>
+          <li>
+            <Link href={"#work"} replace>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link href={"#about"} replace>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href={"#contact"} replace>
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
