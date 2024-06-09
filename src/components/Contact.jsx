@@ -11,7 +11,7 @@ const Contact = () => {
           <Title>Contact</Title>
         </div>
         <div>
-          <h1 className="text-2xl">Ideas, Questions or Advice?</h1>
+          <h1 className="text-2xl mb-3">Ideas, Questions or Advice?</h1>
           <h1 className="text-xl">
             I'd love to hear from you! Whether you have an amazing idea that
             needs to come to life, Collaborate on something exciting or got some

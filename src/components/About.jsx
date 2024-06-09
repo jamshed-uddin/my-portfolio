@@ -13,10 +13,13 @@ const About = () => {
             I love to build intuitive and engaging web interfaces.I am also
             familiar with back-end technology like node js and it's framework
             express js and set goal to be a full-stack web developer with solid
-            grasp on both front-end and back-end.Over the year I have used
-            various technology to make some engaging and dynamic user interfaces
-            and eager to have grasp on more technologies.Currently wrapping up a
-            real-time chat application I was making.
+            grasp on both front-end and back-end.
+            <span className="mt-2 block">
+              Over the year I have used various technology to make some engaging
+              and dynamic user interfaces and eager to have grasp on more
+              technologies.Currently wrapping up a real-time chat application I
+              was making.
+            </span>
           </h2>
         </div>
         <div className="text-xl lg:w-[40%] w-full shrink-0 lg:pl-4 mt-2 lg:mt-0">

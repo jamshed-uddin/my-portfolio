@@ -7,7 +7,7 @@ import { CiMenuFries } from "react-icons/ci";
 const MenuIcon = ({ isOpen, setIsOpen }) => {
   return (
     <div
-      className="relative z-50 lg:hidden "
+      className="relative z-50 lg:hidden  cursor-pointer"
       onClick={() => setIsOpen((p) => !p)}
     >
       {isOpen ? (

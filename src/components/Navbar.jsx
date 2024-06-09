@@ -3,12 +3,9 @@
 import Link from "next/link";
 import MenuIcon from "./MenuIcon";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <div className="flex justify-between items-center lg:py-3 fixed top-0 left-0 right-0 px-3 lg:px-16 backdrop-blur-md">
@@ -32,7 +29,7 @@ const Navbar = () => {
         {/* mobile nav */}
         <ul
           className={`lg:hidden absolute h-screen w-screen bg-white flex flex-col justify-center text-6xl gap-5 pl-4 font-bold transition-all duration-500 ${
-            isMenuOpen ? "inset-0" : "top-0 bottom-0 left-96"
+            isMenuOpen ? "inset-0" : "top-0 bottom-0 left-[60rem]"
           }`}
         >
           <li onClick={() => setIsMenuOpen((p) => !p)}>
@@ -59,13 +56,6 @@ const Navbar = () => {
 
         {/* desktop nav */}
         <ul className="lg:flex items-center gap-6  hidden ">
-          {pathname !== "/" && (
-            <li>
-              <Link href={"#work"} replace>
-                Work
-              </Link>
-            </li>
-          )}
           <li>
             <Link href={"#work"} replace>
               Work
