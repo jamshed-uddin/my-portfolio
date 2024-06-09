@@ -61,8 +61,7 @@ const ContactForm = () => {
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
       )
-      .then((res) => {
-        console.log(res);
+      .then(() => {
         setEmailSending(false);
         setEmailSendSuccess("Message send successfully");
         setSenderInfo({
@@ -78,7 +77,6 @@ const ContactForm = () => {
         }, 3000);
       })
       .catch((error) => {
-        console.log(error);
         setEmailSending(false);
         setErrorText("Something went wrong!");
       });
