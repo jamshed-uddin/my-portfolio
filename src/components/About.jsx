@@ -11,7 +11,7 @@ const About = () => {
           <h2 className="text-lg hyphens-auto break-words">
             Hello__ I am Md Jamshed Uddin. As a web developer focused on
             fron-end I love to build intuitive and engaging web interfaces.I am
-            also familiar with back-end technology like node js and it's
+            also familiar with back-end technology like node js and it&apos;s
             framework express js and set goal to be a full-stack web developer
             with solid grasp on both front-end and back-end.
             <span className="mt-3 block">
