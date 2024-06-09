@@ -54,14 +54,15 @@ const ContactForm = () => {
     };
 
     setEmailSending(true);
-    emailjs
+    await emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_ID
       )
-      .then(() => {
+      .then((res) => {
+        console.log(res);
         setEmailSending(false);
         setEmailSendSuccess("Message send successfully");
         setSenderInfo({
@@ -77,6 +78,7 @@ const ContactForm = () => {
         }, 3000);
       })
       .catch((error) => {
+        console.log(error);
         setEmailSending(false);
         setErrorText("Something went wrong!");
       });
