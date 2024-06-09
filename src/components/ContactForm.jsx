@@ -79,10 +79,7 @@ const ContactForm = () => {
       .catch((error) => {
         setEmailSending(false);
         setErrorText("Something went wrong!");
-        console.log(error);
       });
-
-    console.log(senderInfo);
   };
 
   const inputStyle =
