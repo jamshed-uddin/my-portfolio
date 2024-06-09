@@ -144,10 +144,10 @@ const ContactForm = () => {
         {emailSendSuccess && (
           <span className="  text-green-600">{emailSendSuccess}</span>
         )}
-        <div className="text-center mt-1">
+        <div className="text-center mt-1 ">
           <button
             type="submit"
-            className="text-2xl  bg-black text-white px-4 py-1 rounded-md active:scale-95"
+            className="text-xl  bg-[#1f2937] text-white px-6 py-1  rounded-md active:scale-95"
           >
             {emailSending ? "Sending..." : "Send"}
           </button>
