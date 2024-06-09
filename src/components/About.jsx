@@ -38,14 +38,14 @@ const About = () => {
             Technologies I am skilled and familiar with__
           </h2>
           <div>
-            <h1> Javascript</h1>
+            <h1>Javascript</h1>
             <h1>
               React js, Express js, Node js, Tailwind CSS, Bootstrap, Material
               UI
             </h1>
-            <h1> MongoDB , Mongoose ODM</h1>
+            <h1>MongoDB, Mongoose ODM</h1>
             <h1>
-              Socket.io, REST APIs, Git,Axios, React query, React router dom,
+              Socket.io, REST APIs, Git, Axios, React query, React router dom,
               JWT, Stripe
             </h1>
           </div>

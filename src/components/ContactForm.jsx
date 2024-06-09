@@ -63,7 +63,7 @@ const ContactForm = () => {
       )
       .then(() => {
         setEmailSending(false);
-        setEmailSendSuccess("Message send successfully");
+        setEmailSendSuccess("Message sent successfully");
         setSenderInfo({
           name: "",
           email: "",
