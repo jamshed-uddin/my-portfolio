@@ -86,7 +86,7 @@ const ContactForm = () => {
   };
 
   const inputStyle =
-    " px-5 py-2  w-full mt-1  focus:outline-none bg-white text-xl";
+    " pr-5 py-2  w-full mt-1  focus:outline-none bg-white text-xl";
   return (
     <div>
       <form onSubmit={sendEmailHandler}>
@@ -152,7 +152,7 @@ const ContactForm = () => {
             type="submit"
             className="text-2xl  bg-black text-white px-4 py-1 rounded-md active:scale-95"
           >
-            {emailSending ? "Sending ..." : "Send"}
+            {emailSending ? "Sending..." : "Send"}
           </button>
         </div>
       </form>

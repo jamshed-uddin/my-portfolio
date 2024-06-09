@@ -4,7 +4,7 @@ import ScrollDown from "./ScrollDown";
 const Hero = () => {
   return (
     <div className="lg:h-screen my-36 lg:my-0 lg:mt-0">
-      <div className="lg:h-[calc(100vh-4rem)] flex items-center ">
+      <div className="lg:h-[calc(100vh-3rem)] flex items-center ">
         <div className="lg:w-[35%] md:w-[60%] w-[80%] text-xl">
           <h1>Hello___ I am Md Jamshed Uddin</h1>
           <h1 className="text-lg">

@@ -8,9 +8,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex justify-between items-center lg:py-3 fixed top-0 left-0 right-0 px-3 lg:px-16 backdrop-blur-md">
+    <div className="flex justify-between items-center lg:py-3 fixed top-0 left-0 right-0 px-3 pb-1  lg:px-16 backdrop-blur-md">
       <div className="lg:flex gap-32 leading-3 lg:leading-normal">
-        <h1 className=" text-lg">Md Jamshed Uddin</h1>
+        <Link href={"/"} className=" text-lg">
+          Md Jamshed Uddin
+        </Link>
         {/*available ping  */}
         <div className="flex items-center gap-1">
           <span className="relative flex h-2 w-2">
@@ -28,8 +30,8 @@ const Navbar = () => {
         <MenuIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         {/* mobile nav */}
         <ul
-          className={`lg:hidden absolute h-screen w-screen bg-white flex flex-col justify-center text-6xl gap-5 pl-4 font-bold transition-all duration-500 ${
-            isMenuOpen ? "inset-0" : "top-0 bottom-0 left-[60rem]"
+          className={`lg:hidden absolute h-screen w-screen bg-white flex flex-col justify-center text-6xl gap-5 pl-4 font-bold transition-all duration-700 ${
+            isMenuOpen ? "inset-0" : "top-0 bottom-0 -left-[60rem]"
           }`}
         >
           <li onClick={() => setIsMenuOpen((p) => !p)}>
