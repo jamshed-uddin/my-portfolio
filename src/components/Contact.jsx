@@ -33,20 +33,9 @@ const Contact = () => {
                 className="
 lg:text-xl text-lg flex flex-col space-y-2"
               >
-                <a href="mailto:jamsheduddin03@gmail.com">
-                  <h2 className=" underline inline-block">
-                    jamsheduddin03@gmail.com
-                  </h2>
-                </a>
-                <a href="tel:+8801751901166">
-                  <h2 className=" underline inline-block text-lg">
-                    +8801751901166
-                  </h2>
-                  <span className="text-sm font-light  no-underline">
-                    {" "}
-                    (Whatsapp)
-                  </span>
-                </a>
+                <h2 className="  inline-block">jamsheduddin03@gmail.com</h2>
+
+                <h2 className="  inline-block text-lg">+8801751901166</h2>
               </div>
               {/* socials */}
               <div className="flex items-center gap-8  mt-2">

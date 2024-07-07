@@ -9,26 +9,45 @@ const About = () => {
       <div className="lg:flex lg:divide-x-2 divide-black gap-4">
         <div className="lg:w-[60%] w-full ">
           <h2 className="text-lg hyphens-auto break-words">
-            Hello__ I am Md Jamshed Uddin. As a web developer focused on
-            fron-end I love to build intuitive and engaging web interfaces.I am
-            also familiar with back-end technology like node js and it&apos;s
+            Hello__ I am Md Jamshed Uddin.Web developer focused on fron-end who
+            love to build intuitive and engaging web interfaces.I am also
+            familiar with back-end technologies like node js and it&apos;s
             framework express js and set goal to be a full-stack web developer
             with solid grasp on both front-end and back-end.
             <span className="mt-3 block">
               Over the year I have used various technology to make some engaging
               and dynamic user interfaces and eager to have grasp on more
-              technologies.<span className="underline">My resume</span>
+              technologies.
+              <a
+                className="w-fit underline text-lg cursor-pointer"
+                href="https://drive.google.com/file/d/1WVkoYKNe8F9_VIU02x8RsJr27uPHXBzX/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                My resume
+              </a>
             </span>
             <span className="mt-3 block">
-              Currently wrapping up a real-time chat application I was
-              making.Check out the{" "}
+              Recently finished developing a real-time chat application.Check
+              out the{" "}
+              <a
+                href="https://fax-pbi7.onrender.com/"
+                className="underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live site
+              </a>
+              {"  "}
+              <span>and</span>
+              {"  "}
               <a
                 href="https://github.com/jamshed-uddin/Fax_"
                 className="underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                github repo here
+                github repo
               </a>
             </span>
           </h2>

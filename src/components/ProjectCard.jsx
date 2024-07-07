@@ -34,7 +34,7 @@ const ProjectCard = ({ project }) => {
           </div>
           {/* live site */}
           <div>
-            {project?.status === "Complete" && (
+            {project?.status === "complete" && (
               <a
                 href={project?.liveSiteLink}
                 target="_blank"

@@ -13,8 +13,8 @@
       "React router dom"
     ],
     "githubLink": "https://github.com/jamshed-uddin/Fax_",
-    "liveSiteLink": "",
-    "status": "Ongoing",
+    "liveSiteLink": "https://fax-pbi7.onrender.com/",
+    "status": "complete",
     "description": "A real-time chat application with both one to one and group conversation."
   },
   {
@@ -28,11 +28,12 @@
       "Mongoose",
       "MongoDB",
       "Firebase authentication",
-      "React router dom"
+      "React router dom",
+      "Stripe"
     ],
     "githubLink": "https://github.com/jamshed-uddin/bidSync-client",
     "liveSiteLink": "https://bidsync22.web.app/",
-    "status": "Complete",
+    "status": "complete",
     "description": "An auction platform for selling object from different categories with flexible bidding process."
   },
   {
@@ -45,11 +46,12 @@
       "Tailwind CSS",
       "MongoDB",
       "Firebase authentication",
-      "React router dom"
+      "React router dom",
+      "Stripe"
     ],
     "githubLink": "https://github.com/jamshed-uddin/malody-manor-client",
     "liveSiteLink": "https://melody-manor.web.app/",
-    "status": "Complete",
+    "status": "complete",
     "description": "App for music institute with various music instrument lesson and to make admission process easier for the students."
   }
 ]
