@@ -1,7 +1,6 @@
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Head from "next/head";
 
 const lato = Lato({
   subsets: ["latin"],

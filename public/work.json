@@ -53,5 +53,25 @@
     "liveSiteLink": "https://melody-manor.web.app/",
     "status": "complete",
     "description": "App for music institute with various music instrument lesson and to make admission process easier for the students."
+  },
+  {
+    "id": 4,
+    "title": "Flowr",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1724091860/portfolio_photos/ugntfmojptfg6jz2ozfg.png",
+    "technology": ["React", "React Flow"],
+    "githubLink": "https://github.com/jamshed-uddin/Flowr",
+    "liveSiteLink": "https://flowrr.netlify.app/",
+    "status": "complete",
+    "description": "A node based flow diagram creating app with React and React Flow"
+  },
+  {
+    "id": 5,
+    "title": "Ziggy The Snake",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1724092205/portfolio_photos/zzhr1pwkvv2d4fh2ygsm.png",
+    "technology": ["Javascript", "HTML", "CSS"],
+    "githubLink": "https://github.com/jamshed-uddin/ziggy-the-snake",
+    "liveSiteLink": "https://ziggythesnake.netlify.app/",
+    "status": "complete",
+    "description": "An installable(PWA) retro snake game"
   }
 ]
