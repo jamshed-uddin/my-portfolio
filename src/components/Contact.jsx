@@ -11,8 +11,10 @@ const Contact = () => {
           <Title>Contact</Title>
         </div>
         <div>
-          <h1 className="text-2xl mb-3">Ideas, Questions or Advice?</h1>
-          <h1 className="text-lg">
+          <h1 className="text-xl lg:text-2xl mb-3">
+            Ideas, Questions or Advice?
+          </h1>
+          <h1 className="text-base lg:text-lg">
             I&apos;d love to hear from you! Whether you have an amazing idea
             that needs to come to life, Collaborate on something exciting or got
             some advice for me. Drop me a message. I&apos;m always open to new
@@ -31,11 +33,11 @@ const Contact = () => {
               {/* email phone */}
               <div
                 className="
-lg:text-xl text-lg flex flex-col space-y-2"
+lg:text-xl  flex flex-col space-y-2"
               >
                 <h2 className="  inline-block">jamsheduddin03@gmail.com</h2>
 
-                <h2 className="  inline-block text-lg">+8801751901166</h2>
+                <h2 className="  inline-block ">+8801751901166</h2>
               </div>
               {/* socials */}
               <div className="flex items-center gap-8  mt-2">
@@ -61,7 +63,7 @@ lg:text-xl text-lg flex flex-col space-y-2"
 
       <div>
         <h3 className="text-sm font-light text-center ">
-          2024 &copy; Md Jamshed Uddin
+          2025 &copy; Md Jamshed Uddin
         </h3>
       </div>
     </div>

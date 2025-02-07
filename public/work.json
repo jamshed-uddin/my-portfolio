@@ -19,6 +19,25 @@
   },
   {
     "id": 2,
+    "title": "Luxeon",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1738943373/portfolio_photos/kgh2wlpgtm3jdjofhzzj.png",
+    "technology": [
+      "Next js",
+      "Auth js",
+      "Express js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Stripe",
+      "JWT",
+      "Recharts"
+    ],
+    "githubLink": "https://github.com/jamshed-uddin/Luxeon",
+    "liveSiteLink": "https://luxeon.vercel.app/",
+    "status": "complete",
+    "description": "A E-commerce application."
+  },
+  {
+    "id": 3,
     "title": "BidSync",
     "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1717852879/portfolio_photos/bidSync_nnassy.png",
     "technology": [
@@ -37,7 +56,7 @@
     "description": "An auction platform for selling object from different categories with flexible bidding process."
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Melody Manor",
     "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1717852862/portfolio_photos/melodymanor_r6e9j6.png",
     "technology": [
@@ -55,7 +74,7 @@
     "description": "App for music institute with various music instrument lesson and to make admission process easier for the students."
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Flowr",
     "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1724091860/portfolio_photos/ugntfmojptfg6jz2ozfg.png",
     "technology": ["React", "React Flow"],
@@ -65,7 +84,7 @@
     "description": "A node based flow diagram creating app with React and React Flow"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Ziggy The Snake",
     "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1724092205/portfolio_photos/zzhr1pwkvv2d4fh2ygsm.png",
     "technology": ["Javascript", "HTML", "CSS"],

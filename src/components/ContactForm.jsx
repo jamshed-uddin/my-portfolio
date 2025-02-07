@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -83,13 +83,13 @@ const ContactForm = () => {
   };
 
   const inputStyle =
-    " pr-5 py-2  w-full mt-1  focus:outline-none bg-white text-xl";
+    " pr-5 py-2  w-full mt-1  focus:outline-none bg-white lg:text-xl";
   return (
     <div>
       <form onSubmit={sendEmailHandler}>
         <div className="lg:flex items-center gap-4">
           <div className="w-full">
-            <label htmlFor="" className="text-xl  block">
+            <label htmlFor="" className="lg:text-xl  block">
               Name
             </label>
             <input
@@ -106,7 +106,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full">
-            <label htmlFor="" className="text-xl  block">
+            <label htmlFor="" className="lg:text-xl  block">
               Email
             </label>
             <input
@@ -124,7 +124,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="w-full lg:mt-4">
-          <label htmlFor="" className="text-xl block">
+          <label htmlFor="" className="lg:text-xl block">
             Message
           </label>
           <textarea

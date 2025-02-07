@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { LuExternalLink } from "react-icons/lu";
@@ -9,13 +10,13 @@ const ProjectCard = ({ project }) => {
       <div className="lg:flex-grow order-last lg:order-first lg:space-y-4 flex lg:block justify-between items-start">
         {/* title and tech */}
         <div className="">
-          <h1 className="text-2xl font-medium">
-            {project?.title}{" "}
-            <span className="text-base ml-2">
-              {project?.status === "Ongoing" ? ". Ongoing" : ""}
+          <h1 className="text-lg lg:text-2xl font-medium">
+            {project?.title}
+            <span className="text-xs lg:text-base ml-2">
+              {project?.status === "Ongoing" ? ".  Ongoing" : ""}
             </span>
           </h1>
-          <h3 className=" w-full lg:w-3/4 leading-4 mt-1">
+          <h3 className=" w-full lg:w-3/4 leading-4 mt-1 text-sm lg:text-base">
             {project?.technology?.join(" . ")}
           </h3>
         </div>
@@ -50,11 +51,13 @@ const ProjectCard = ({ project }) => {
       {/* project image */}
       <div className="  select-none ">
         <div className="lg:w-80 w-full  lg:shadow-md rounded-lg overflow-hidden">
-          <img
+          <Image
             className="w-full object-cover  "
             src={project?.photourl}
-            alt=""
-            loading="lazy"
+            alt={project?.title}
+            priority
+            width={320}
+            height={180}
             draggable="false"
           />
         </div>

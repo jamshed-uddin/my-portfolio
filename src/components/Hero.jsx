@@ -11,14 +11,6 @@ const Hero = () => {
             Web developer focused on front-end.I thrive on building intuitive
             and engaging web interfaces.
           </h1>
-          <a
-            className="w-fit underline text-lg cursor-pointer"
-            href="https://drive.google.com/file/d/1WVkoYKNe8F9_VIU02x8RsJr27uPHXBzX/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            My resume
-          </a>
         </div>
       </div>
       <ScrollDown />

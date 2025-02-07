@@ -1,15 +1,15 @@
-import workData from "../../public/work.json";
+import projectsData from "../../public/work.json";
 import ProjectCard from "./ProjectCard";
 import Title from "./Title";
 
-const Work = () => {
+const Projects = () => {
   return (
-    <div className="lg:flex  gap-2  pt-12 lg:pt-16" id="work">
+    <div className="lg:flex  gap-2  pt-12 lg:pt-16" id="projects">
       <div className="mb-4 lg:pr-20">
-        <Title>Work</Title>
+        <Title>Projects</Title>
       </div>
       <div className="flex-grow h-full space-y-6 lg:space-y-5">
-        {workData?.map((project) => (
+        {projectsData?.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
@@ -17,4 +17,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Projects;

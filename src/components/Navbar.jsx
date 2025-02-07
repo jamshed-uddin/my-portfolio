@@ -25,13 +25,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div>
+      <div className="uppercase te">
         {/* icon for mobile nav */}
         <MenuIcon isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         {/* mobile nav */}
         <ul
-          className={`lg:hidden absolute h-screen w-screen bg-white flex flex-col justify-center text-6xl gap-5 pl-4 font-bold transition-all duration-700 ${
-            isMenuOpen ? "inset-0" : "top-0 bottom-0 -left-[60rem]"
+          className={`lg:hidden absolute h-screen w-screen bg-white flex flex-col justify-center text-5xl gap-5 pl-4 font-semibold transition-all duration-500 inset-0 ${
+            isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <li onClick={() => setIsMenuOpen((p) => !p)}>
@@ -40,8 +40,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={() => setIsMenuOpen((p) => !p)}>
-            <Link href={"#work"} replace>
-              Work
+            <Link href={"#projects"} replace>
+              Projects
             </Link>
           </li>
           <li onClick={() => setIsMenuOpen((p) => !p)}>
@@ -57,10 +57,10 @@ const Navbar = () => {
         </ul>
 
         {/* desktop nav */}
-        <ul className="lg:flex items-center gap-6  hidden ">
+        <ul className="lg:flex items-center gap-6  hidden text-sm">
           <li>
-            <Link href={"#work"} replace>
-              Work
+            <Link href={"#projects"} replace>
+              Projects
             </Link>
           </li>
           <li>
