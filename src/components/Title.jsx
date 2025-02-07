@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = ({ children }) => {
   return (
-    <h2 className=" text-3xl   font-semibold">
+    <h2 className=" text-sm font-medium sticky top-14">
       <span>{children}</span>
     </h2>
   );

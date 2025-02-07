@@ -5,24 +5,36 @@ import { LuExternalLink } from "react-icons/lu";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="flex flex-col gap-y-3 lg:flex-row lg:border-b-2 border-black lg:pb-4 rounded-xl md:rounded-none  shadow-md md:shadow-none p-2 md:p-0 ">
+    <div className="rounded-lg     ">
+      {/* project image */}
+      <div className="  select-none ">
+        <div className=" w-full  rounded-lg overflow-hidden">
+          <Image
+            className="w-full object-cover  "
+            src={project?.photourl}
+            alt={project?.title}
+            priority
+            width={320}
+            height={180}
+            draggable="false"
+          />
+        </div>
+      </div>
       {/* project title and technology and links */}
-      <div className="lg:flex-grow order-last lg:order-first lg:space-y-4 flex lg:block justify-between items-start">
+      <div className="mt-4 lg:mt-5 lg:p-2 space-y-3">
         {/* title and tech */}
         <div className="">
-          <h1 className="text-lg lg:text-2xl font-medium">
+          <h1 className="  font-medium">
             {project?.title}
             <span className="text-xs lg:text-base ml-2">
               {project?.status === "Ongoing" ? ".  Ongoing" : ""}
             </span>
           </h1>
-          <h3 className=" w-full lg:w-3/4 leading-4 mt-1 text-sm lg:text-base">
-            {project?.technology?.join(" . ")}
-          </h3>
+          <h3 className=" text-xs">{project?.technology?.join(" . ")}</h3>
         </div>
 
         {/* links */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3">
           {/* github */}
           <div>
             <a
@@ -30,7 +42,7 @@ const ProjectCard = ({ project }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={20} />
+              <FaGithub size={15} />
             </a>
           </div>
           {/* live site */}
@@ -41,25 +53,10 @@ const ProjectCard = ({ project }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <LuExternalLink size={20} />
+                <LuExternalLink size={15} />
               </a>
             )}
           </div>
-        </div>
-      </div>
-
-      {/* project image */}
-      <div className="  select-none ">
-        <div className="lg:w-80 w-full  lg:shadow-md rounded-lg overflow-hidden">
-          <Image
-            className="w-full object-cover  "
-            src={project?.photourl}
-            alt={project?.title}
-            priority
-            width={320}
-            height={180}
-            draggable="false"
-          />
         </div>
       </div>
     </div>

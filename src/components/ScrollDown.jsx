@@ -8,7 +8,7 @@ const ScrollDown = () => {
         <h3>
           <HiArrowDown />
         </h3>
-        <h3>Scroll down</h3>
+        <h3 className="text-xs">Scroll down</h3>
       </div>
     </div>
   );

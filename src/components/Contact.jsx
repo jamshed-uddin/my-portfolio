@@ -1,20 +1,19 @@
 import Title from "./Title";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
+
 import ContactForm from "./ContactForm";
+
+import ProfileLinks from "./ProfileLinks";
 
 const Contact = () => {
   return (
-    <div className="  pt-12 lg:pt-16" id="contact">
-      <div className="lg:flex  gap-2 ">
-        <div className="mb-4 lg:pr-14">
+    <div className="  " id="contact">
+      <div className="my-grid ">
+        <div className="mb-4 lg:pr-14 col-span-3">
           <Title>Contact</Title>
         </div>
-        <div>
-          <h1 className="text-xl lg:text-2xl mb-3">
-            Ideas, Questions or Advice?
-          </h1>
-          <h1 className="text-base lg:text-lg">
+        <div className="col-span-9">
+          <h1 className="text-lg mb-3">Ideas, Questions or Advice?</h1>
+          <h1 className="">
             I&apos;d love to hear from you! Whether you have an amazing idea
             that needs to come to life, Collaborate on something exciting or got
             some advice for me. Drop me a message. I&apos;m always open to new
@@ -29,41 +28,26 @@ const Contact = () => {
             </div>
 
             {/* email,number and socials */}
-            <div className="lg:pl-5 lg:w-[40%] w-full h-fit space-y-4">
+            <div className="lg:pl-5 lg:w-[40%] w-full h-fit space-y-2">
               {/* email phone */}
               <div
                 className="
-lg:text-xl  flex flex-col space-y-2"
+  flex flex-col space-y-1"
               >
                 <h2 className="  inline-block">jamsheduddin03@gmail.com</h2>
 
                 <h2 className="  inline-block ">+8801751901166</h2>
               </div>
-              {/* socials */}
-              <div className="flex items-center gap-8  mt-2">
-                <a
-                  href={"https://github.com/jamshed-uddin"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={30} />
-                </a>
-                <a
-                  href={"https://www.linkedin.com/in/mdjamsheduddin/"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={30} />
-                </a>
-              </div>
+              {/* profiles */}
+              <ProfileLinks />
             </div>
           </div>
         </div>
       </div>
 
       <div>
-        <h3 className="text-sm font-light text-center ">
-          2025 &copy; Md Jamshed Uddin
+        <h3 className="text-sm font-medium text-center ">
+          Made with 🍌 by Md Jamshed Uddin
         </h3>
       </div>
     </div>

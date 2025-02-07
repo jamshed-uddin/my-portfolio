@@ -82,14 +82,14 @@ const ContactForm = () => {
       });
   };
 
-  const inputStyle =
-    " pr-5 py-2  w-full mt-1  focus:outline-none bg-white lg:text-xl";
+  const inputStyle = " pr-5 pb-1  w-full   focus:outline-none bg-white text-sm";
+
   return (
     <div>
       <form onSubmit={sendEmailHandler}>
-        <div className="lg:flex items-center gap-4">
+        <div className="lg:flex items-center gap-4  ">
           <div className="w-full">
-            <label htmlFor="" className="lg:text-xl  block">
+            <label htmlFor="" className="block">
               Name
             </label>
             <input
@@ -97,8 +97,8 @@ const ContactForm = () => {
               placeholder="Your name"
               className={`${inputStyle} ${
                 isError.name
-                  ? "border-b-[1.4px] border-red-500"
-                  : "border-b-[1.4px] border-black"
+                  ? "border-b border-red-500"
+                  : "border-b border-black"
               }`}
               name="name"
               value={senderInfo.name}
@@ -106,7 +106,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="w-full">
-            <label htmlFor="" className="lg:text-xl  block">
+            <label htmlFor="" className="  block">
               Email
             </label>
             <input
@@ -114,8 +114,8 @@ const ContactForm = () => {
               placeholder="Your email address"
               className={`${inputStyle} ${
                 isError.email
-                  ? "border-b-[1.4px] border-red-500"
-                  : "border-b-[1.4px] border-black"
+                  ? "border-b border-red-500"
+                  : "border-b border-black"
               }`}
               name="email"
               value={senderInfo.email}
@@ -124,32 +124,34 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="w-full lg:mt-4">
-          <label htmlFor="" className="lg:text-xl block">
+          <label htmlFor="" className="block">
             Message
           </label>
           <textarea
             type="text"
             placeholder="Your message"
-            className={` resize-none min-h-32 ${inputStyle} ${
+            className={` resize-none min-h-20 ${inputStyle} ${
               isError.message
-                ? "border-b-[1.4px] border-red-500"
-                : "border-b-[1.4px] border-black"
+                ? "border-b border-red-500"
+                : "border-b border-black"
             }`}
             name="message"
             value={senderInfo.message}
             onChange={handleOnChange}
           />
         </div>
-        {errorText && <span className="  text-red-600">{errorText}</span>}
-        {emailSendSuccess && (
-          <span className="  text-green-600">{emailSendSuccess}</span>
+        {errorText && (
+          <span className=" text-xs text-red-600">{errorText}</span>
         )}
-        <div className="text-center mt-1 ">
+        {emailSendSuccess && (
+          <span className=" text-xs text-green-600">{emailSendSuccess}</span>
+        )}
+        <div className="text-end mt-1 flex justify-end">
           <button
             type="submit"
-            className="text-xl  bg-[#1f2937] text-white px-6 py-1  rounded-md active:scale-95"
+            className=" active:scale-95 flex justify-end items-center gap-1 border-b border-black"
           >
-            {emailSending ? "Sending..." : "Send"}
+            {emailSending ? "Sending..." : "Send"}{" "}
           </button>
         </div>
       </form>

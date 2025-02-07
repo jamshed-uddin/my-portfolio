@@ -2,18 +2,18 @@ import Title from "./Title";
 
 const About = () => {
   return (
-    <div className="lg:flex  gap-2  pt-12 lg:pt-16" id="about">
-      <div className="mb-4 lg:pr-20">
+    <div className="  my-grid" id="about">
+      <div className="mb-4 lg:pr-20 col-span-3">
         <Title>About</Title>
       </div>
-      <div className="lg:flex lg:divide-x-2 divide-black gap-4">
-        <div className="lg:w-[60%] w-full ">
-          <h2 className=" lg:text-lg hyphens-auto break-words">
-            Hello__ I am Md Jamshed Uddin.Web developer focused on fron-end who
-            love to build intuitive and engaging web interfaces.I am also
-            familiar with back-end technologies like node js and it&apos;s
-            framework express js and set goal to be a full-stack web developer
-            with solid grasp on both front-end and back-end.
+      <div className=" col-span-9 space-y-10">
+        <div className="w-full ">
+          <h2 className="hyphens-auto break-words">
+            Web developer focused on fron-end love to build intuitive and
+            engaging web interfaces.I am also familiar with back-end
+            technologies like node js and it&apos;s framework express js and set
+            goal to be a full-stack web developer with solid grasp on both
+            front-end and back-end. Currently diving deep into node js.
             <span className="mt-3 block">
               Over the year I have used various technology to make some engaging
               and dynamic user interfaces and eager to have grasp on more
@@ -44,19 +44,19 @@ const About = () => {
             </span>
           </h2>
         </div>
-        <div className="text-lg lg:w-[40%] w-full shrink-0 lg:pl-4 mt-2 lg:mt-0">
-          <h2 className="text-lg lg:text-xl mb-1 lg:mb-3 ">
+        <div className="  w-full   mt-2 ">
+          <h2 className="text-lg  mb-1  ">
             Technologies I am skilled and familiar with__
           </h2>
-          <div className="text-base">
-            <h1>Javascript</h1>
+          <div className="">
+            <h1>- Javascript, Typescript</h1>
             <h1>
-              React js, Express js, Node js, Tailwind CSS, Bootstrap, Material
-              UI
+              - Next js, React js, Express js, Node js, Tailwind CSS, Bootstrap,
+              Material UI
             </h1>
-            <h1>MongoDB, Mongoose ODM</h1>
+            <h1>- MongoDB, Mongoose ODM</h1>
             <h1>
-              Socket.io, REST APIs, Git, Axios, React query, React router dom,
+              - Socket.io, REST APIs, Git, Axios, React query, React router dom,
               JWT, Stripe
             </h1>
           </div>
