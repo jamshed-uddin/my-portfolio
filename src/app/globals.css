@@ -30,3 +30,12 @@ body {
 .my-grid {
   @apply grid grid-cols-1 lg:grid-cols-12;
 }
+
+#trailer {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+body:hover > #trailer {
+  opacity: 1;
+}

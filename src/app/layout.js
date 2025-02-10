@@ -2,6 +2,7 @@ import { Archivo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
+import MouseTrailer from "@/components/MouseTrailer";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -23,10 +24,12 @@ export default function RootLayout({ children }) {
             <Navbar />
           </div>
           <div className="min-h-[calc(100vh-4rem)]">
-            {children} <Analytics />
+            {children}
+            {/* <Analytics /> */}
           </div>
           <div></div>
         </div>
+        <MouseTrailer />
       </body>
     </html>
   );

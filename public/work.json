@@ -39,7 +39,8 @@
   {
     "id": 3,
     "title": "BidSync",
-    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1717852879/portfolio_photos/bidSync_nnassy.png",
+    "photourl": "https://res.cloudinary.com/dgrpadmpv/image/upload/v1739203276/portfolio_photos/bidSync_nnassy.png",
+
     "technology": [
       "React",
       "Express",
