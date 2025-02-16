@@ -8,7 +8,6 @@ const NotFound = () => {
           src={"/confuseTravolta.mp4"}
           controls={false}
           loop
-          preload="none"
           className="w-full h-full "
           autoPlay
           muted
