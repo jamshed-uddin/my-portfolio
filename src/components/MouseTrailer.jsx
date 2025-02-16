@@ -7,12 +7,6 @@ const MouseTrailer = () => {
   const trailerRef = useRef(null);
 
   useEffect(() => {
-    // const setPosition = (e) => {
-    //   console.log(e);
-    //   setMousePosition((p) => ({ ...p, x: e.clientX, y: e.clientY }));
-    //   //   setMousePosition((p) => ({ ...p, y: e.clientY }));
-    // };
-
     const animateTrailer = (e) => {
       const trailer = trailerRef.current;
 
@@ -49,7 +43,7 @@ const MouseTrailer = () => {
         pointerEvents: "none",
         fill: "forwards",
       }}
-      className={` h-3 w-3 rounded-full bg-black z-50 `}
+      className={`hidden lg:block h-3 w-3 rounded-full bg-black z-50 `}
       id="trailer"
     ></div>
   );
