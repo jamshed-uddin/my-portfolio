@@ -43,7 +43,7 @@ const MouseTrailer = () => {
         pointerEvents: "none",
         fill: "forwards",
       }}
-      className={`hidden lg:block h-3 w-3 rounded-full bg-black z-50 `}
+      className={`hidden lg:block h-4 w-4 rounded-full bg-white z-50 mix-blend-difference`}
       id="trailer"
     ></div>
   );
